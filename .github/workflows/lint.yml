@@ -8,6 +8,7 @@ permissions:
 
 jobs:
   lint:
+    timeout-minutes: 10
     if: github.event.pull_request.draft == false
     name: Run lint
     runs-on: ubuntu-latest
