@@ -7,6 +7,8 @@ on:
       - reopened
       # Manually trigger this workflow to pass required status check
       - ready_for_review
+    paths:
+      - '.github/**'
 jobs:
   call-gha-lint:
     permissions:
